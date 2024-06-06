@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-dimmed {
+    @apply text-zinc-500 dark:text-zinc-500;
+  }
+}
+
+@layer components {
+  .form-select {
+    @apply border-regal-blue bg-transparent rounded
+  }
+
+  .form-input {
+    @apply block w-full bg-transparent border-regal-blue rounded shadow-sm
+  }
+
+  .button, .button [type='button'], [type='reset'], [type='submit']  {
+    @apply bg-regal-blue text-white px-4 py-2 rounded
+    hover:opacity-60
+  }
+
+  .button-ghost {
+    @apply bg-transparent border px-4 py-2 rounded
+    hover:opacity-60
+  }
+}
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #4d84c4;
+}
